@@ -10,7 +10,8 @@ public class ABADemo {
       static AtomicStampedReference atomicStampedReference = new AtomicStampedReference(100,1);
 
     public static void main(String[] args) {
-          ###################################
+          //###################################
+        System.out.println();
         System.out.println("===========ABA问题产生");
         new Thread(() -> {
             atomicReference.compareAndSet(100,101);
